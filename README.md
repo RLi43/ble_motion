@@ -2,6 +2,10 @@
 
 This is a project of a motion sensor server based on BNO080 and a ESP32 chip. It reports its data via Bluetooth Low Energy(BLE). The development environment is ESP-IDF v5.2.1.
 
+## Build Project
+
+1. Clone the [IMU library](https://github.com/myles-parfeniuk/esp32_BNO08x.git) to `components` folder. 2. Check the Bluetooth support in sdkconfig
+
 ## BLE Service
 
 The GATT Server is implemented refering to ESP GATT Server example and [Heiko Rothkranz's example](https://gist.github.com/heiko-r/f284d95141871e12ca0164d9070d61b4). Attemptions are made to generalize the BLE Service definition.
@@ -15,7 +19,7 @@ To create a new customized BLE application, you can follow the steps below:
 
 ## IMU: BNO08x
 
-[https://github.com/myles-parfeniuk/esp32_BNO08x.git](https://github.com/myles-parfeniuk/esp32_BNO08x.git) is used as the library for reading BNO08x. There's still a small issue in my project.
+[https://github.com/myles-parfeniuk/esp32_BNO08x.git](https://github.com/myles-parfeniuk/esp32_BNO08x.git) is used as the library for reading BNO08x.
 
 To make debugging easier, I recommend you to add this code block after [this line](https://github.com/myles-parfeniuk/esp32_BNO08x/blob/05006334201b1a22d85603df19d637130d5c408d/BNO08x.cpp#L352):
 

@@ -12,8 +12,9 @@
 * data.
 *
 ****************************************************************************/
+#include "imu.hpp"
 
-#include "imu.h"
+extern "C"{    
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -140,4 +141,6 @@ void app_main(void)
     
 
     return;
+}
+
 }

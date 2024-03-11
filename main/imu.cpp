@@ -1,4 +1,4 @@
-#include "imu.h"
+#include "imu.hpp"
 
 #include "BNO08x.hpp"
 
@@ -57,7 +57,7 @@ void imu_task()
         ble_update_acc(imu_acc);
         ble_update_acc_acc(imu_acc_acc);
         ble_update_ori(imu_ori);
-
+        
         // ESP_LOGW("IMU", "Linear Acceleration(acc=%u): x: %.3f y: %.3f z: %.3f", acc_accuracy, acc_x, acc_y, acc_z);
         // ESP_LOGI("IMU", "Oritentation(deg): x (roll): %.3f y (pitch): %.3f z (yaw): %.3f", ori_x, ori_y, ori_z);
     }
