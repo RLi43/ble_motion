@@ -350,6 +350,7 @@ struct gatts_service_inst gatts_service_imu = {
     .char_list = gatts_char_imu
 };
 
+/* Data Handling */
 
 void ble_update_acc(float* data){
     static uint8_t float_buffer[4];
